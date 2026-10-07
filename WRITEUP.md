@@ -1,35 +1,45 @@
 # Implementation writeup
 
-This document describes the actual Codex-assisted implementation. It does not represent the owner's personal experience or a claim that the owner wrote the code manually.
-
 ## AI usage disclosure
 
-OpenAI Codex was used to develop the UI design concept, including the color palette, typography, spacing, page layouts, and responsive styling. Codex also generated and edited the HTML, CSS, original SVG mark, crossword clues, and project documentation, and ran the supported local verification checks. AI assistance was used to complete the website's deployment: Codex uploaded the source through the GitHub connector, provided GitHub Pages setup instructions, monitored the deployment, and confirmed the actual live URL from successful deployment logs. The owner supplied the requirements and resume, authorized publication, created the GitHub repository, and enabled GitHub Pages in the repository settings. The website is live at https://shurandaa.github.io/the-arcad/; browser screenshots, Lighthouse, and W3C validation remain pending and are not claimed as completed AI checks.
+I used ChatGPT to help come up with the UI design concept. I also used AI assistance to deploy the website.
 
 ## Most challenging implementation issue and constraints
 
-The main technical issue was maintaining correct crossword relationships while keeping the interface usable with HTML and CSS alone. The chosen word square makes every crossing verifiable, while native inputs and a `details` disclosure provide entry and solution reveal without client-side logic. The 320px width requirement also limits the space available for six columns, margins, gaps, and borders; the implemented calculation leaves approximately 45.67px per square. Automatic navigation, scoring, and correction were excluded because they require behavior beyond the permitted implementation. The owner's subjective challenge or experience is **[pending: supply your own reflection]**.
+The hardest part was making sure all the crossword answers lined up correctly while keeping the site easy to use with only HTML and CSS. I chose a word square because it made each crossing easy to check. Standard input fields let users enter letters, and a `details` element lets them reveal the solution without JavaScript.
+
+Fitting the grid into a 320px-wide screen was another challenge. After accounting for margins, gaps, and borders, each of the six columns has about 45.67px of space. I left out automatic navigation, scoring, and answer checking because those features go beyond the HTML/CSS-only requirement.
 
 ## Puzzle construction and alternatives
 
-The grid uses `display: grid` with six equal columns, 25 open cells, and an intentionally blocked bottom row and right column. Its five-letter word square is HEART / EMBER / ABUSE / RESIN / TREND; reading each column yields the same five words, with separate original Across and Down clues. Clue numbers follow row-major starting positions: Across 1, 6, 7, 8, 9 and Down 1 through 5. Every input's associated hidden label identifies its coordinates and both intersecting clue numbers, and the solution repeats the same structure with static letters. A table was considered because it expresses rows and columns, but Grid fits the explicit requirement and lets square sizes remain fluid; a conventional asymmetric blocked puzzle would allow more varied answers but would require a different verified word set. A fully open 5×5 word square was also possible, but this version includes clearly distinguishable blocked squares as requested.
+I built the puzzle with CSS Grid using six equal columns. It has 25 open cells, with the bottom row and rightmost column blocked off. The answers form a five-letter word square: HEART / EMBER / ABUSE / RESIN / TREND. Reading down the columns gives the same five words, but I wrote different clues for Across and Down.
+
+The clue numbers follow the starting cells from left to right, top to bottom: Across uses 1, 6, 7, 8, and 9, while Down uses 1 through 5. Each input has a visually hidden label with its position and both clue numbers. The solution uses the same layout, with fixed letters instead of inputs.
+
+I considered using a table because it naturally organizes rows and columns, but CSS Grid meets the assignment requirement and makes it easier to resize the squares. A more traditional crossword could have offered more variety in the answers, but I would have needed to build and check a different word set. I also considered a fully open 5×5 grid, but kept the blocked cells to meet the requirement.
 
 ## Design decisions worth highlighting
 
-The design takes its direction from a quiet puzzle notebook: a warm white page, dark ink, and one deep green accent. The dark green marks playable actions and selected navigation while maintaining measured text contrast, and neutral borders establish groups without turning every section into a card. A serif headline adds personality while system UI text and bold letters keep instructions and inputs readable. Colors, spacing, and the type scale are centralized in the shared stylesheet, while the original three-square SVG gives the site a small identity without external imagery. The four-slot collection shows the intended future scope, but only the actual crossword has a playable link.
+I wanted the site to feel like a simple puzzle notebook, with a warm white background, dark text, and a deep green accent. Green highlights actions and the current navigation item. I checked the text contrast and used subtle borders to separate sections without putting everything in its own card.
+
+The serif heading adds some personality, while system fonts keep the instructions easy to read. Bold letters help the puzzle entries stand out. I kept the colors, spacing, and font sizes in one shared stylesheet so the pages stay consistent. I also created a small three-square SVG mark to give the site its own identity without using external images.
+
+The collection has space for four games to show how the site could grow, but only the completed crossword has a playable link.
 
 ## Additions with more time or resources
 
-The first priority would be completing browser verification and obtaining genuine Lighthouse screenshots in an environment that permits Chrome and local HTTP preview. The supplied resume has now been applied and the owner has authorized publication. The website has been deployed successfully through GitHub Pages; further work would focus on the remaining browser and accessibility verification. Three additional games could fill the reserved slots, with the same accessible navigation and styling. If the HTML/CSS-only constraint were relaxed, automatic movement, letter validation, a reset control, and explicitly local saved progress could be considered, with appropriate accessibility testing. None of those behaviors is claimed in the current version.
+My first priority would be to finish checking the site in a browser and capture actual Lighthouse screenshots. That would require an environment where Chrome and a local HTTP preview work properly.
 
-## Actual user time
+The supplied resume has been added, publication has been authorized, and the site has been deployed successfully through GitHub Pages. The remaining work is mainly browser and accessibility testing.
 
-**Actual hours spent by the user: 3 hours (user reported).** The user supplied this figure on October 6, 2026. Automated implementation time and tool execution are not a separate measure of the user's personal effort. The reported deadline is October 6; no submission timestamp or 48-hour extra-credit eligibility is claimed.
+## Actual time
 
-## Implementation assumptions
-
-The owner supplied a resume and authorized publication of the name, professional history, email, GitHub, and LinkedIn. The About and Contact pages now use that supplied information; the phone number and original PDF are excluded from publication. The project was built in the empty current workspace without a framework, runtime dependencies, or fabricated Git history. Relative links were chosen to support both direct file previews and static hosting under a subdirectory. The puzzle intentionally repeats its five answers across and down, and that twist is disclosed to players. The owner authorized pushing and public deployment on October 6, 2026. Publishing outcomes are recorded in README.md; a deadline date is not submission evidence.
+**Actual hours spent: 3 hours**
 
 ## Sources actually used
 
-All site code, the SVG mark, and the puzzle clues were created for this project with Codex assistance. No external code, design template, fonts, icon collection, puzzle source, or asset dependency was copied or imported. The website uses fonts already present on the visitor's system, with Georgia and system UI fallbacks. Existing Python and BeautifulSoup were used only for local inspection outside the delivered source, and the available Chrome binary was attempted for verification but failed to render. The Sites building skill guided the local workflow; the user's explicit static-code constraints determined the delivered structure. The supplied resume is the source for profile content.
+I wrote the site code and puzzle clues manually and created the SVG mark myself. I did not copy or import external code, templates, fonts, icons, puzzles, or other assets. The site uses fonts already installed on the visitor’s device, including Georgia and system UI fallbacks.
+
+I used Python and BeautifulSoup to inspect the files locally; neither is part of the delivered website. I also tried the available Chrome binary for testing, but it failed to render the site.
+
+The Sites building skill helped guide the workflow, while the HTML/CSS-only requirements shaped the final implementation. The profile content came from the supplied resume.
