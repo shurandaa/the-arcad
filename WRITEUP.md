@@ -2,6 +2,10 @@
 
 This document describes the actual Codex-assisted implementation. It does not represent the owner's personal experience or a claim that the owner wrote the code manually.
 
+## AI usage disclosure
+
+OpenAI Codex was used to develop the UI design concept, including the color palette, typography, spacing, page layouts, and responsive styling. Codex also generated and edited the HTML, CSS, original SVG mark, crossword clues, and project documentation, and ran the supported local verification checks. AI assistance was used to complete the website's deployment: Codex uploaded the source through the GitHub connector, provided GitHub Pages setup instructions, monitored the deployment, and confirmed the actual live URL from successful deployment logs. The owner supplied the requirements and resume, authorized publication, created the GitHub repository, and enabled GitHub Pages in the repository settings. The website is live at https://shurandaa.github.io/the-arcad/; browser screenshots, Lighthouse, and W3C validation remain pending and are not claimed as completed AI checks.
+
 ## Most challenging implementation issue and constraints
 
 The main technical issue was maintaining correct crossword relationships while keeping the interface usable with HTML and CSS alone. The chosen word square makes every crossing verifiable, while native inputs and a `details` disclosure provide entry and solution reveal without client-side logic. The 320px width requirement also limits the space available for six columns, margins, gaps, and borders; the implemented calculation leaves approximately 45.67px per square. Automatic navigation, scoring, and correction were excluded because they require behavior beyond the permitted implementation. The owner's subjective challenge or experience is **[pending: supply your own reflection]**.
@@ -16,7 +20,7 @@ The design takes its direction from a quiet puzzle notebook: a warm white page, 
 
 ## Additions with more time or resources
 
-The first priority would be completing browser verification and obtaining genuine Lighthouse screenshots in an environment that permits Chrome and local HTTP preview. The supplied resume has now been applied and the owner has authorized publication. The next publishing step requires network access for source upload and repository creation capability. Three additional games could fill the reserved slots, with the same accessible navigation and styling. If the HTML/CSS-only constraint were relaxed, automatic movement, letter validation, a reset control, and explicitly local saved progress could be considered, with appropriate accessibility testing. None of those behaviors is claimed in the current version.
+The first priority would be completing browser verification and obtaining genuine Lighthouse screenshots in an environment that permits Chrome and local HTTP preview. The supplied resume has now been applied and the owner has authorized publication. The website has been deployed successfully through GitHub Pages; further work would focus on the remaining browser and accessibility verification. Three additional games could fill the reserved slots, with the same accessible navigation and styling. If the HTML/CSS-only constraint were relaxed, automatic movement, letter validation, a reset control, and explicitly local saved progress could be considered, with appropriate accessibility testing. None of those behaviors is claimed in the current version.
 
 ## Actual user time
 
