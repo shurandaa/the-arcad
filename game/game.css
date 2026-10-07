@@ -1,0 +1,23 @@
+/* Crossword surface */
+.puzzle-layout { display: grid; grid-template-columns: minmax(278px, 380px) 1fr; gap: var(--space-5); align-items: start; }
+.puzzle-grid { display: grid; grid-template-columns: repeat(6, minmax(44px, 1fr)); gap: 2px; background: var(--ink); border: 2px solid var(--ink); width: 100%; max-width: 380px; }
+.cell { position: relative; aspect-ratio: 1; min-width: 44px; min-height: 44px; background: var(--paper); }
+.blocked { background: var(--ink); aspect-ratio: 1; }
+.cell-number { position: absolute; top: 1px; left: 4px; font-size: .75rem; line-height: 1.2; pointer-events: none; }
+.cell input { display: block; width: 100%; height: 100%; min-height: 44px; padding: 10px 0 0; border: 0; border-radius: 0; background: transparent; color: var(--ink); text-align: center; font: 600 1.5rem/1 system-ui, sans-serif; text-transform: uppercase; }
+.cell:focus-within { background: var(--accent-light); }
+.cell input:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; }
+.clues { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+.clue-list { margin: 0; padding-left: var(--space-3); }
+.clue-list li { padding-left: .25rem; margin-bottom: var(--space-3); }
+.clue-list li::marker { color: var(--accent); font-weight: 700; }
+.clue-list span { color: var(--muted); white-space: nowrap; }
+.puzzle-note { font-size: var(--text-small); color: var(--muted); margin-top: var(--space-3); }
+.solution { margin: var(--space-4) 0; padding: var(--space-2) 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.solution summary { min-height: 48px; padding: .65rem .5rem; cursor: pointer; color: var(--accent); font-weight: 700; }
+.solution[open] summary { margin-bottom: var(--space-2); }
+.solution-grid .cell { display: flex; align-items: center; justify-content: center; padding-top: 10px; font-size: 1.5rem; font-weight: 600; }
+.answer-lists { display: flex; flex-wrap: wrap; gap: var(--space-5); margin-top: var(--space-3); }
+@media (max-width: 900px) { .clues { grid-template-columns: 1fr; gap: var(--space-3); } }
+@media (max-width: 700px) { .puzzle-layout { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); } .clues { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); } }
+@media (max-width: 380px) { .clues { grid-template-columns: 1fr; } }

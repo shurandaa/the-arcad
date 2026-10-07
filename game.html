@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small personal arcade with a hand-crafted mini crossword and room for more games.">
+  <title>Mini crossword | The Arcade</title>
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="game/game.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="brand" href="index.html"><img src="assets/mark.svg" width="32" height="32" alt=""><span>The Arcade <small>Shuran Zhao’s corner</small></span></a>
+      <ul><li><a href="index.html">Home</a></li>
+<li><a href="game.html" aria-current="page">Crossword</a></li>
+<li><a href="about/index.html">About</a></li>
+<li><a href="contact/index.html">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <header class="page-intro"><p class="eyebrow">Game 01 / The word square</p><h1>The mini crossword.</h1><p id="instructions">Enter one letter in each white square. Tab moves across rows; Shift + Tab moves back. Tap a square to edit it. All answers have five letters.</p></header>
+    <div class="puzzle-layout">
+      <section aria-labelledby="grid-title" aria-describedby="instructions"><h2 id="grid-title">Your puzzle</h2><div class="puzzle-grid">
+<div class="cell"><span class="cell-number" aria-hidden="true">1</span><label class="visually-hidden" for="cell-1-1">Row 1, column 1; 1 Across, 1 Down</label><input id="cell-1-1" name="cell-1-1" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">2</span><label class="visually-hidden" for="cell-1-2">Row 1, column 2; 1 Across, 2 Down</label><input id="cell-1-2" name="cell-1-2" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">3</span><label class="visually-hidden" for="cell-1-3">Row 1, column 3; 1 Across, 3 Down</label><input id="cell-1-3" name="cell-1-3" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">4</span><label class="visually-hidden" for="cell-1-4">Row 1, column 4; 1 Across, 4 Down</label><input id="cell-1-4" name="cell-1-4" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">5</span><label class="visually-hidden" for="cell-1-5">Row 1, column 5; 1 Across, 5 Down</label><input id="cell-1-5" name="cell-1-5" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">6</span><label class="visually-hidden" for="cell-2-1">Row 2, column 1; 6 Across, 1 Down</label><input id="cell-2-1" name="cell-2-1" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-2-2">Row 2, column 2; 6 Across, 2 Down</label><input id="cell-2-2" name="cell-2-2" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-2-3">Row 2, column 3; 6 Across, 3 Down</label><input id="cell-2-3" name="cell-2-3" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-2-4">Row 2, column 4; 6 Across, 4 Down</label><input id="cell-2-4" name="cell-2-4" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-2-5">Row 2, column 5; 6 Across, 5 Down</label><input id="cell-2-5" name="cell-2-5" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">7</span><label class="visually-hidden" for="cell-3-1">Row 3, column 1; 7 Across, 1 Down</label><input id="cell-3-1" name="cell-3-1" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-3-2">Row 3, column 2; 7 Across, 2 Down</label><input id="cell-3-2" name="cell-3-2" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-3-3">Row 3, column 3; 7 Across, 3 Down</label><input id="cell-3-3" name="cell-3-3" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-3-4">Row 3, column 4; 7 Across, 4 Down</label><input id="cell-3-4" name="cell-3-4" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-3-5">Row 3, column 5; 7 Across, 5 Down</label><input id="cell-3-5" name="cell-3-5" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">8</span><label class="visually-hidden" for="cell-4-1">Row 4, column 1; 8 Across, 1 Down</label><input id="cell-4-1" name="cell-4-1" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-4-2">Row 4, column 2; 8 Across, 2 Down</label><input id="cell-4-2" name="cell-4-2" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-4-3">Row 4, column 3; 8 Across, 3 Down</label><input id="cell-4-3" name="cell-4-3" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-4-4">Row 4, column 4; 8 Across, 4 Down</label><input id="cell-4-4" name="cell-4-4" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-4-5">Row 4, column 5; 8 Across, 5 Down</label><input id="cell-4-5" name="cell-4-5" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">9</span><label class="visually-hidden" for="cell-5-1">Row 5, column 1; 9 Across, 1 Down</label><input id="cell-5-1" name="cell-5-1" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-5-2">Row 5, column 2; 9 Across, 2 Down</label><input id="cell-5-2" name="cell-5-2" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-5-3">Row 5, column 3; 9 Across, 3 Down</label><input id="cell-5-3" name="cell-5-3" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-5-4">Row 5, column 4; 9 Across, 4 Down</label><input id="cell-5-4" name="cell-5-4" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="cell"><label class="visually-hidden" for="cell-5-5">Row 5, column 5; 9 Across, 5 Down</label><input id="cell-5-5" name="cell-5-5" type="text" maxlength="1" autocomplete="off" autocapitalize="characters" spellcheck="false"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+</div><p class="puzzle-note">A small twist: the answers form a word square, so the same five words appear across and down. The dark border squares are blocked.</p></section>
+      <div class="clues"><section><h2>Across</h2><ol class="clue-list"><li value="1">Organ that keeps your blood moving <span>(5)</span></li><li value="6">A glowing piece left after a fire <span>(5)</span></li><li value="7">Mistreatment of a person or thing <span>(5)</span></li><li value="8">Sticky substance produced by some trees <span>(5)</span></li><li value="9">A general direction of change <span>(5)</span></li></ol></section><section><h2>Down</h2><ol class="clue-list"><li value="1">What a Valentine shape represents <span>(5)</span></li><li value="2">A coal that still glows <span>(5)</span></li><li value="3">To use something in a harmful way <span>(5)</span></li><li value="4">Tree secretion used in varnish <span>(5)</span></li><li value="5">A style gaining popularity <span>(5)</span></li></ol></section></div>
+    </div>
+    <details class="solution"><summary>Reveal solution</summary><p>Compare letters manually. Opening this section does not change your entries.</p><div class="puzzle-grid solution-grid">
+<div class="cell"><span class="cell-number" aria-hidden="true">1</span><span aria-hidden="true">H</span><span class="visually-hidden">Row 1, column 1; 1 Across, 1 Down: H</span></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">2</span><span aria-hidden="true">E</span><span class="visually-hidden">Row 1, column 2; 1 Across, 2 Down: E</span></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">3</span><span aria-hidden="true">A</span><span class="visually-hidden">Row 1, column 3; 1 Across, 3 Down: A</span></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">4</span><span aria-hidden="true">R</span><span class="visually-hidden">Row 1, column 4; 1 Across, 4 Down: R</span></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">5</span><span aria-hidden="true">T</span><span class="visually-hidden">Row 1, column 5; 1 Across, 5 Down: T</span></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">6</span><span aria-hidden="true">E</span><span class="visually-hidden">Row 2, column 1; 6 Across, 1 Down: E</span></div>
+<div class="cell"><span aria-hidden="true">M</span><span class="visually-hidden">Row 2, column 2; 6 Across, 2 Down: M</span></div>
+<div class="cell"><span aria-hidden="true">B</span><span class="visually-hidden">Row 2, column 3; 6 Across, 3 Down: B</span></div>
+<div class="cell"><span aria-hidden="true">E</span><span class="visually-hidden">Row 2, column 4; 6 Across, 4 Down: E</span></div>
+<div class="cell"><span aria-hidden="true">R</span><span class="visually-hidden">Row 2, column 5; 6 Across, 5 Down: R</span></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">7</span><span aria-hidden="true">A</span><span class="visually-hidden">Row 3, column 1; 7 Across, 1 Down: A</span></div>
+<div class="cell"><span aria-hidden="true">B</span><span class="visually-hidden">Row 3, column 2; 7 Across, 2 Down: B</span></div>
+<div class="cell"><span aria-hidden="true">U</span><span class="visually-hidden">Row 3, column 3; 7 Across, 3 Down: U</span></div>
+<div class="cell"><span aria-hidden="true">S</span><span class="visually-hidden">Row 3, column 4; 7 Across, 4 Down: S</span></div>
+<div class="cell"><span aria-hidden="true">E</span><span class="visually-hidden">Row 3, column 5; 7 Across, 5 Down: E</span></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">8</span><span aria-hidden="true">R</span><span class="visually-hidden">Row 4, column 1; 8 Across, 1 Down: R</span></div>
+<div class="cell"><span aria-hidden="true">E</span><span class="visually-hidden">Row 4, column 2; 8 Across, 2 Down: E</span></div>
+<div class="cell"><span aria-hidden="true">S</span><span class="visually-hidden">Row 4, column 3; 8 Across, 3 Down: S</span></div>
+<div class="cell"><span aria-hidden="true">I</span><span class="visually-hidden">Row 4, column 4; 8 Across, 4 Down: I</span></div>
+<div class="cell"><span aria-hidden="true">N</span><span class="visually-hidden">Row 4, column 5; 8 Across, 5 Down: N</span></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="cell"><span class="cell-number" aria-hidden="true">9</span><span aria-hidden="true">T</span><span class="visually-hidden">Row 5, column 1; 9 Across, 1 Down: T</span></div>
+<div class="cell"><span aria-hidden="true">R</span><span class="visually-hidden">Row 5, column 2; 9 Across, 2 Down: R</span></div>
+<div class="cell"><span aria-hidden="true">E</span><span class="visually-hidden">Row 5, column 3; 9 Across, 3 Down: E</span></div>
+<div class="cell"><span aria-hidden="true">N</span><span class="visually-hidden">Row 5, column 4; 9 Across, 4 Down: N</span></div>
+<div class="cell"><span aria-hidden="true">D</span><span class="visually-hidden">Row 5, column 5; 9 Across, 5 Down: D</span></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+<div class="blocked" aria-hidden="true"></div>
+</div><div class="answer-lists"><section><h2>Across answers</h2><ol><li value="1">HEART</li><li value="6">EMBER</li><li value="7">ABUSE</li><li value="8">RESIN</li><li value="9">TREND</li></ol></section><section><h2>Down answers</h2><ol><li value="1">HEART</li><li value="2">EMBER</li><li value="3">ABUSE</li><li value="4">RESIN</li><li value="5">TREND</li></ol></section></div></details>
+    <p class="puzzle-note">Your entries stay only on this page while it is open. There is no automatic movement, scoring, correction, or saved progress.</p>
+</main>
+  <footer class="site-footer"><p>The Arcade · A little space to play.</p><p>Owner: Shuran Zhao</p></footer>
+</body>
+</html>

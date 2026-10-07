@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small personal arcade with a hand-crafted mini crossword and room for more games.">
+  <title>About | The Arcade</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/mark.svg">
+  <link rel="stylesheet" href="../assets/site.css">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="brand" href="../index.html"><img src="../assets/mark.svg" width="32" height="32" alt=""><span>The Arcade <small>Shuran Zhao’s corner</small></span></a>
+      <ul><li><a href="../index.html">Home</a></li>
+<li><a href="../game.html">Crossword</a></li>
+<li><a href="../about/index.html" aria-current="page">About</a></li>
+<li><a href="../contact/index.html">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <header class="page-intro"><p class="eyebrow">Behind the arcade</p><h1>A place for curious minds.</h1><p>I’m Shuran Zhao, a computer science graduate student at Northeastern University. My work spans software engineering, applied AI, and tools for developers.</p></header>
+    <div class="profile-layout">
+      <div>
+        <section><h2>Experience</h2>
+          <h3>Amazon AWS</h3><p><strong>Software Engineer Intern · Jun–Aug 2026</strong><br>Built AI-assisted investigation workflows for deployment failures, integration tests, and canary alarms, along with notification and incident-ticket automation.</p>
+          <h3>Spatioform Lab</h3><p><strong>Applied AI Researcher · Jan 2026–present</strong><br>Built a Python coding-agent runtime, runtime permission controls, and evaluation and memory systems for evolving agent skills.</p>
+          <h3>Tiandong Technology</h3><p><strong>Software Engineer Intern · Feb–Jun 2025</strong><br>Developed a multi-agent support platform with retrieval, tool reliability controls, session memory, and evaluation workflows.</p>
+        </section>
+        <section><h2>Education</h2>
+          <h3>Northeastern University</h3><p>Master of Science in Computer Science<br>Sep 2025–Jun 2027 · Expected graduation Jun 2027</p>
+          <h3>Chongqing University</h3><p>Bachelor of Engineering in Software Engineering<br>Sep 2021–Jun 2025</p>
+          <h3>University of California, Irvine</h3><p>UCInspire undergraduate summer program<br>Jun–Aug 2024</p>
+        </section>
+        <section><h2>Technical focus</h2><p>Java, Python, Kotlin, Go, TypeScript, and SQL; backend services with Spring Boot and FastAPI; frontend interfaces with React; and cloud systems on AWS and GCP.</p></section>
+        <section><h2>Selected project</h2><h3>Dashgrid</h3><p>An ordering system using Spring Boot, PostgreSQL, React, Docker, and AWS, with JWT authentication, asynchronous inventory updates, and Redis caching.</p></section>
+      </div>
+      <section><h2>Project notebook</h2><p>A closer look at the design decisions behind this arcade.</p><div class="project-notes">
+        <section><h3>The mini crossword</h3><p>A word square uses the same five answers across and down, giving this small puzzle a deliberate symmetry.</p>
+          <section><h4>Playing without scripts</h4><p>Each square is a native text field. Players enter one character at a time and compare their work with the solution.</p>
+            <section><h5>Keyboard navigation</h5><p>Tab moves through the open squares in reading order. Shift + Tab moves backward.</p>
+              <section><h6>Checking an answer</h6><p>After the final square, Tab reaches “Reveal solution.” Press Enter or Space to open it, then read the numbered answer grid and answer lists.</p></section>
+            </section>
+          </section>
+        </section>
+      </div></section>
+    </div>
+</main>
+  <footer class="site-footer"><p>The Arcade · A little space to play.</p><p>Owner: Shuran Zhao</p></footer>
+</body>
+</html>
