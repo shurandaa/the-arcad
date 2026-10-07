@@ -52,3 +52,12 @@ A Sites project was successfully registered, persisted in `.openai/hosting.json`
 ## Repository follow-up
 
 The owner created `shurandaa/the-arcad` (without the final e). Repository listing and metadata calls confirm it is public and grants push/admin access. Source upload can use connected GitHub tools; the resume, private PDF, duplicate dist tree and Sites configuration are excluded from the GitHub upload. GitHub Pages settings must be enabled by the owner because the available connector has no operation for those settings.
+
+GITHUB SOURCE UPLOAD CONFIRMED:
+Repository: https://github.com/shurandaa/the-arcad
+Branch: main
+Website source commit: 1a27909fe533f6e046d93cb45cfc896eeb8ffcc8
+Uploaded: four HTML pages, shared and game CSS, SVG, .gitignore, and project/verification documentation.
+Read-back verification: all seven public source files match local contents exactly.
+Excluded: original resume PDF, phone number, duplicate dist, local Sites identity, upload ZIP.
+Live website remains pending: owner must enable GitHub Pages from main and / (root); current tools lack a Pages-settings operation.

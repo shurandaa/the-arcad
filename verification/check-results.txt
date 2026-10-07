@@ -237,3 +237,12 @@ Sites registration and public access: succeeded; project_id saved in .openai/hos
 Workspace source workflow: failed writing .git (Operation not permitted).
 Temporary checkout retry: Git initialized; source upload failed with Could not resolve host: git.chatgpt-team.site.
 No pushed source, saved version, deployment success, or live URL is claimed.
+
+GITHUB SOURCE UPLOAD CONFIRMED:
+Repository: https://github.com/shurandaa/the-arcad
+Branch: main
+Website source commit: 1a27909fe533f6e046d93cb45cfc896eeb8ffcc8
+Uploaded: four HTML pages, shared and game CSS, SVG, .gitignore, and project/verification documentation.
+Read-back verification: all seven public source files match local contents exactly.
+Excluded: original resume PDF, phone number, duplicate dist, local Sites identity, upload ZIP.
+Live website remains pending: owner must enable GitHub Pages from main and / (root); current tools lack a Pages-settings operation.

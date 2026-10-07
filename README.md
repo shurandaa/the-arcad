@@ -9,7 +9,7 @@ index.html                 Landing page and four game slots
  game.html                 Playable crossword and solution
  game/game.css             Crossword-specific styles
  about/index.html          Resume-based profile and project notebook
- contact/index.html        Pending contact directory
+ contact/index.html        Email, GitHub and LinkedIn contacts
  assets/site.css           Shared design tokens, layouts, responsive styles
  assets/mark.svg           Original local grid mark and favicon
  verification/check-results.txt  Actual local check results and limitations
@@ -52,7 +52,7 @@ See [actual results](verification/check-results.txt) and [follow-up instructions
 
 ## Static deployment
 
-The owner authorized pushing and public deployment on October 6, 2026. A Sites project has been registered with public access, but no version has been uploaded or deployed. The source workflow was attempted from an isolated writable temporary checkout after the workspace denied writing `.git`; upload then failed because `git.chatgpt-team.site` could not be resolved. The saved `.openai/hosting.json` identifies the same project for a later retry; do not register a replacement site. The owner created the public `shurandaa/the-arcad` repository (note the spelling). It is accessible through the connected GitHub tools, which are being used to upload the source despite local DNS restrictions.
+The owner authorized pushing and public deployment on October 6, 2026. A Sites project has been registered with public access, but no version has been uploaded or deployed. The source workflow was attempted from an isolated writable temporary checkout after the workspace denied writing `.git`; upload then failed because `git.chatgpt-team.site` could not be resolved. The saved `.openai/hosting.json` identifies the same project for a later retry; do not register a replacement site. The owner created the public `shurandaa/the-arcad` repository (note the spelling). It is accessible through the connected GitHub tools, which successfully uploaded all source and documentation to `main` despite local DNS restrictions.
 
 Complete the pending browser checks when the required tools become available. Any static host that serves `index.html` and nested directories can serve the project without a build. Upload the four HTML pages plus `assets/`, `game/game.css`, `about/`, and `contact/` with their relative paths intact; documentation and verification artifacts need not be public.
 
@@ -66,7 +66,7 @@ For GitHub Pages after authorization:
 Do not invent a repository name or published URL before those actions succeed.
 
 - GitHub repository: **https://github.com/shurandaa/the-arcad** (verified accessible public repository).
-- Live site: **PENDING — source upload blocked by DNS; no deployment succeeded**
+- Live site: **PENDING — GitHub source uploaded; enable GitHub Pages in repository settings**
 
 ## Resources and authorship
 
@@ -79,10 +79,12 @@ Profile content is sourced from the supplied `SHURAN ZHAO.pdf`. This source docu
 ## Next publication steps
 
 1. The public repository is https://github.com/shurandaa/the-arcad. Use this exact repository name; it differs from the originally suggested `the-arcade`.
-2. In an environment permitting Git metadata writes and network access, commit the source (excluding the original PDF), set the actual repository remote, and push. Enable GitHub Pages from the root as described above. Alternatively, restore network access here and resume the already registered Sites project using a newly minted credential and the Sites publishing workflow.
+2. Source upload to `main` succeeded through the GitHub connector. Enable GitHub Pages from `main` and `/ (root)` using repository Settings → Pages. Sites remains an optional alternative if network access for its source workflow is restored.
 3. For a manual static-host upload, extract `verification/public-site.zip` and upload its contents. This archive does not include the private resume or documentation.
 4. Record the actual repository and successful live-site URLs and finish the pending browser and Lighthouse checks.
 
 ## GitHub Pages activation
 
-After the source upload succeeds, open https://github.com/shurandaa/the-arcad/settings/pages and select **Deploy from a branch**, **main**, and **/ (root)**, then Save. The connected GitHub tools do not expose a Pages-settings operation, so activation requires the repository owner to use GitHub Settings. Use the live URL shown by GitHub after the deployment succeeds; no predicted Pages URL is reported as live.
+The source upload succeeded. Open https://github.com/shurandaa/the-arcad/settings/pages and select **Deploy from a branch**, **main**, and **/ (root)**, then Save. The connected GitHub tools do not expose a Pages-settings operation, so activation requires the repository owner to use GitHub Settings. Use the live URL shown by GitHub after the deployment succeeds; no predicted Pages URL is reported as live.
+
+The website source commit is `1a27909fe533f6e046d93cb45cfc896eeb8ffcc8`. All seven public HTML/CSS/SVG files were read back through the GitHub connector and matched local contents exactly. `dist/`, `.openai/hosting.json`, and the upload ZIP are local-only convenience artifacts and are not part of the GitHub source tree.
