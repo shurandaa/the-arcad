@@ -66,7 +66,7 @@ For GitHub Pages after authorization:
 Do not invent a repository name or published URL before those actions succeed.
 
 - GitHub repository: **https://github.com/shurandaa/the-arcad** (verified accessible public repository).
-- Live site: **PENDING — GitHub source uploaded; enable GitHub Pages in repository settings**
+- Live site: **https://shurandaa.github.io/the-arcad/** (GitHub Pages deployment succeeded).
 
 ## Resources and authorship
 
@@ -85,6 +85,6 @@ Profile content is sourced from the supplied `SHURAN ZHAO.pdf`. This source docu
 
 ## GitHub Pages activation
 
-The source upload succeeded. Open https://github.com/shurandaa/the-arcad/settings/pages and select **Deploy from a branch**, **main**, and **/ (root)**, then Save. The connected GitHub tools do not expose a Pages-settings operation, so activation requires the repository owner to use GitHub Settings. Use the live URL shown by GitHub after the deployment succeeds; no predicted Pages URL is reported as live.
+The owner enabled GitHub Pages from `main` and `/ (root)`. The actual [Pages deployment](https://github.com/shurandaa/the-arcad/actions/runs/37555475481) completed successfully for source commit `23dec44c8528976c8e16113fbdec040616ddd58f`. Its deploy-job log reported success and the environment URL https://shurandaa.github.io/the-arcad/ at 2026-10-07 01:07:38 UTC (October 6 in America/Los_Angeles). Deployment success does not establish browser layout, interaction, Lighthouse, or validator results; these remain pending.
 
 The website source commit is `1a27909fe533f6e046d93cb45cfc896eeb8ffcc8`. All seven public HTML/CSS/SVG files were read back through the GitHub connector and matched local contents exactly. `dist/`, `.openai/hosting.json`, and the upload ZIP are local-only convenience artifacts and are not part of the GitHub source tree.

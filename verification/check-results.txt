@@ -246,3 +246,12 @@ Uploaded: four HTML pages, shared and game CSS, SVG, .gitignore, and project/ver
 Read-back verification: all seven public source files match local contents exactly.
 Excluded: original resume PDF, phone number, duplicate dist, local Sites identity, upload ZIP.
 Live website remains pending: owner must enable GitHub Pages from main and / (root); current tools lack a Pages-settings operation.
+
+GITHUB PAGES DEPLOYMENT CONFIRMED:
+Run: https://github.com/shurandaa/the-arcad/actions/runs/37555475481
+Source commit: 23dec44c8528976c8e16113fbdec040616ddd58f
+Build and deployment jobs: completed / success.
+Deploy log: Reported success at 2026-10-07T01:07:38 UTC.
+Actual environment URL from deploy log: https://shurandaa.github.io/the-arcad/
+Verification method: GitHub connector Actions run, jobs, and deploy-job log.
+This supersedes earlier pending Pages activation/deployment notes. Browser rendering and Lighthouse remain pending; deployment status is not a visual or accessibility audit.
